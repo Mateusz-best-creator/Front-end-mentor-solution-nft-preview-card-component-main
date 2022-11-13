@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+}
+
+.main-container {
+    max-width: 400px;
+    background-color: hsl(216, 50%, 16%);
+    margin: 0 auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    border-radius: 10px;
+}
+
+.image-container {
+    width: 100%;
+    height: 50%;
+    padding: 2rem;
+    position: relative;
+}
+
+.image-container img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.image-container #icon{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nice-background {
+    background-color: hsl(178, 100%, 50%);
+    height: 330px;
+    width: 330px;
+    border-radius: 10px;
+    opacity: 0.0;
+    position: absolute;
+    top: 2rem;
+}
+
+.content-container {
+    width: 100%;
+}
+
+.content-container h1 {
+    color: white;
+    font-size: 1.8rem;
+    padding: 1rem;
+    margin-left: 1rem;
+}
+
+#main-note {
+    text-align: start;
+    margin: 0 4rem 0 2rem;
+    color: hsl(215, 51%, 70%);
+}
+
+#two-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+#first-item, #second-item {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#first-item p {
+    color: hsl(178, 100%, 50%);
+}
+
+#second-item p {
+    color: hsl(215, 51%, 70%);
+}
+
+#first-item img {
+    transform: scale(1.5);
+}
+
+#second-item img {
+    transform: scale(1.5);
+}
+
+hr {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#avatar-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#avatar-info img {
+    transform: scale(0.5);
+}
+
+#avatar-info p {
+    color: white;
+}
+
+span {
+    color: hsl(215, 51%, 70%);
+    margin-right: 0.5rem;
+}
+
+.attribution {
+    display: none;
+}
+
+.nice-background:hover {
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+h1:hover, .nice-color-hover:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer
+}
